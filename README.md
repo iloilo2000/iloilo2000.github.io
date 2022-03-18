@@ -9,3 +9,7 @@ Just some Linux basics...
 [2021-12-16 linux basics](/blogs/2021-12-16-linux-basics.md)
 
 [2022-03-01 kali basics](/blogs/2022-03-01-kali-basics.md)
+
+# Windows things
+
+[2020-05-01 windows admin center](/blogs/2020-05-01-windows-admin-center.md)
