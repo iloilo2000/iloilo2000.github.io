@@ -122,3 +122,5 @@ https://crackstation.net/
 - Configure **proxy**
 - Intercept web traffic
   - Attack login page with password dictionary
+- Target / Scope: The tartget web traffic can be filtered
+
