@@ -118,12 +118,16 @@ https://crackstation.net/
 
 # Burp Suite
 
-Three version: Community (free), Pro, Enterprise
-Community version cannot save projects, the setting reset after every restart.
+Three versions: Community (free), Pro, Enterprise
+Community version cannot save projects, all setting reset after every restart.
 
 - Start the GUI
-- Configure **proxy**
-- Intercept web traffic
+- Configure **proxy** IP address
+- Intercept web traffic on the proxy tab
   - Attack login page with password dictionary
 - Target / Scope: The tartget web traffic can be filtered
+- Send the captured data to Intruder
+- Send the captured data to Repeater
+  - You can modify header and other parameters and send the modified request to the web server
+
 
