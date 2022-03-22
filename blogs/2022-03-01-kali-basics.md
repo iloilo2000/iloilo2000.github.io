@@ -118,6 +118,9 @@ https://crackstation.net/
 
 # Burp Suite
 
+Three version: Community (free), Pro, Enterprise
+Community version cannot save projects, the setting reset after every restart.
+
 - Start the GUI
 - Configure **proxy**
 - Intercept web traffic
