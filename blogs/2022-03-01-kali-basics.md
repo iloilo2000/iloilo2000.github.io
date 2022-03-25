@@ -110,6 +110,7 @@ Example3: `hydra -l username -P passlist.txt 10.10.95.142 -t 4 ssh`
 
 To bruteforce a web form go to the browser **developer tools/network** tab and check the request method (usually GET or POST).
 Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V`
+|opt|desc|
 |---|---|
 | -L | User name |
 | -P | Password list |
@@ -119,7 +120,6 @@ Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login
 | ^USER^ ^PASS^ | tells that where to append the user and password (the actual values come from -L and -P) |
 | F=incorrect | Failed login if the answer contains "incorrect" |
 | -V | verbose log |
-|---|---|
 
 ## john the ripper
 
