@@ -1,4 +1,4 @@
-# Kali specific
+# Kali notes
 
 Tools directory: `/usr/share`
 
@@ -30,6 +30,8 @@ Find services, users, shares on the target machine
 
 # Network
 
+## Basics
+
 `Ping` és `traceroute`
 
 `Whois` fut Windows powershellből is nem csak Linux konzolon. :)
@@ -55,6 +57,13 @@ SYN Scan a célgép nyitott portok vizsgálatára
 - -sV -> feloldja a service neveket,
 - -p- -> minden portot nézzen
 `sudo nmap -sS -sV -p- <TARGET_IP>`
+
+## netcat
+
+Local listener to access remote shell
+Example: `nc -l -p 1234`
+-l -> listener
+-p <port> -> listening port (where the victim should connect to)
 
 # Metasploite
 
