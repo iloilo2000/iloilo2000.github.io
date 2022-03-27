@@ -61,7 +61,9 @@ SYN Scan a célgép nyitott portok vizsgálatára
 ## netcat
 
 Local listener to access remote shell
+
 Example: `nc -l -p 1234`
+
 -l -> listener
 -p <port> -> listening port (where the victim should connect to)
 
