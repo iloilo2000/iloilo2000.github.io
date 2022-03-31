@@ -20,7 +20,20 @@ Login with the SSH key:
 
 ## Take some notes
 
-Install and use **sublimetext**
+### Sublimetext
+
+Install **sublimetext**
+Open with  
+`subl <filename>`
+
+### Github or Github Pages
+
+- github.com/iloilo2000
+- iloilo2000.github.io
+
+### Notion
+
+Web GUI notion.so (login with Google)
 
 ## Pipe output to TXT file
 
