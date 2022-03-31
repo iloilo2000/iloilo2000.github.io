@@ -18,6 +18,14 @@ Before use an ssh key ensure that the key is file system protected:
 Login with the SSH key:
 `ssh -i <ssh_key_file> user@<target_IP>`
 
+## Take some notes
+
+Install and use **sublimetext**
+
+## Pipe output to TXT file
+
+`<command> | tee output.txt`
+
 # Basic Commands
 
 Mappa listázás: `ls`
