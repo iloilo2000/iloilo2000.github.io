@@ -38,6 +38,10 @@ Find services, users, shares on the target machine
 
 DNS query: `dig <dnsname> [@dnsserver]`
 
+**SSH**: `ssh user@<targetIP>`
+
+**RDP**: `rdesktop <targetIP>`
+
 ## nmap
 
 Ultimate network scan tool:
