@@ -162,4 +162,9 @@ Community version cannot save projects, all setting reset after every restart.
 - Send the captured data to Repeater
   - You can modify header and other parameters and send the modified request to the web server
 
+# Windows Exploitation
+
+## Powerview
+
+Start powerview: `. .\poweview.ps1` (note! the command start with two dots with a space)
 
