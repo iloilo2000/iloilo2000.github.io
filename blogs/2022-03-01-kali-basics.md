@@ -148,7 +148,14 @@ Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login
 
 https://crackstation.net/
 
-# Burp Suite
+# Web Site Hacking
+
+## OWASP Juice Shop
+
+Web based OWASP Training site with 90 different challenges:  
+https://owasp.org/www-project-juice-shop/
+
+## Burp Suite
 
 Three versions: Community (free), Pro, Enterprise
 Community version cannot save projects, all setting reset after every restart.
