@@ -2,6 +2,7 @@
 
 Tools directory: `/usr/share`
 
+---
 # Basic Forensics
 
 List users: `cat /etc/passwd`
@@ -14,10 +15,12 @@ Exploit DB: https://www.exploit-db.com
 
 ## DirBuster
 
-Find well-known files and directories on a web server.
+Find well-known files and directories on a web server.  
 Parameters:
 - web server IP address and port, e.g.: `http://10.10.123.55:80/`
 - dictionary file, e.g.: `/usr/share/dirbuster/dictionary/common.txt`
+
+Example: `dirb http://10.10.8.172/ /usr/share/wordlists/dirb/common.txt`
 
 ## LinPEAS
 
@@ -28,6 +31,7 @@ Very comprehensive and detailed command line scanning tool
 
 Find services, users, shares on the target machine
 
+---
 # Network
 
 ## Basics
@@ -68,9 +72,10 @@ Local listener to access remote shell
 
 Example: `nc -l -p 1234`
 
--l -> listener
--p <port> -> listening port (where the victim should connect to)
+`-l` -> listener  
+`-p <port>` -> listening port (where the victim should connect to)
 
+---
 # Metasploite
 
 Initialize Metasploite DB:
@@ -107,6 +112,7 @@ Main Steps to use Metasploit:
 Upgrade normal shell to **meterpreter** shell:
 https://infosecwriteups.com/metasploit-upgrade-normal-shell-to-meterpreter-shell-2f09be895646
 
+---
 # Crack passwords
 
 ## hashcat
@@ -148,12 +154,19 @@ Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login
 
 https://crackstation.net/
 
+---
 # Web Site Hacking
 
 ## OWASP Juice Shop
 
 Web based OWASP Training site with 90 different challenges:  
 https://owasp.org/www-project-juice-shop/
+
+## Reconaissance
+
+OVASP Favicon Database: https://wiki.owasp.org/index.php/OWASP_favicon_database
+
+Find technologies on a website: https://www.wappalyzer.com/
 
 ## Burp Suite
 
