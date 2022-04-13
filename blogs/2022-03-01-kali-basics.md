@@ -162,7 +162,7 @@ https://crackstation.net/
 Web based OWASP Training site with 90 different challenges:  
 https://owasp.org/www-project-juice-shop/
 
-## Reconaissance
+## Reconnaissance
 
 OVASP Favicon Database: https://wiki.owasp.org/index.php/OWASP_favicon_database
 
