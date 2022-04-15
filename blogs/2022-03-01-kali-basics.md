@@ -73,6 +73,18 @@ Csak a gépek felderítése portscan nélkül:
 - PR -> ARP scan (vagyis csak a subneten belüli gépek válaszolnak)  
 `nmap -PR -sn 10.10.10.0/24`
 
+| Opt | Desc |
+|---|---|
+| -PR | ARP scan |
+| -PE | ICMP Echo scan |
+| -PP | ICMP Timestamp scan |
+| -PM | ICMP Mask scan |
+| -PS[port range] | SYN scan with optional port range (port examples: -PS21, -PS1000-2000, -PS80,443) |
+| -PA[port range] | ACK scan with optional port range (port examples: -PS21, -PS1000-2000, -PS80,443) |
+| -sn | No portscan |
+| -n | No DNS lookup |
+| -R | (reverse) DNS lookup for the on/offline hosts |
+
 ## netcat
 
 Act as a **client** or a **server**.
@@ -84,8 +96,8 @@ Example: `nc -l -p 1234`
 
 | Opt | Desc |
 |---|---|
-| `-l` | listen mode (server) |
-| `-p <port>` | listening port (where the attacker should connect to) |
+| -l | listen mode (server) |
+| -p <port> | listening port (where the attacker should connect to) |
 | -n | No DNS resolution |
 | -v (-vv) | Verbose (Very Verbose) output |
 | -k | Keep listening after client disconnects |
