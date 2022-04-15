@@ -56,17 +56,22 @@ Ultimate network scan tool:
 - Services scan
 
 **Examples:**
-Csekkolja hogy a target gép 21-es portján engedélyezett-e az FTP Anonymous logon ("-Pn" azért kell mert blokkolva a "ping probe")
+Csekkolja hogy a target gép 21-es portján engedélyezett-e az FTP Anonymous logon ("-Pn" azért kell mert blokkolva a "ping probe")  
 `sudo nmap --script=ftp-anon -Pn -p21 <targetIP>`
 
-Sebezhetőségek keresése a célgépen:
+Sebezhetőségek keresése a célgépen:  
 `sudo nmap -sV-vv --script vuln <targetIP>`
 
 SYN Scan a célgép nyitott portok vizsgálatára
 - -sS -> SYN Scan
 - -sV -> feloldja a service neveket,
-- -p- -> minden portot nézzen
+- -p- -> minden portot nézzen  
 `sudo nmap -sS -sV -p- <TARGET_IP>`
+
+Csak a gépek felderítése portscan nélkül:
+- -sn -> nincs portscan
+- PR -> ARP scan (vagyis csak a subneten belüli gépek válaszolnak)  
+`nmap -PR -sn 10.10.10.0/24`
 
 ## netcat
 
