@@ -13,6 +13,7 @@ The home directory of the users always have some interesting stuff: `/home/<user
 ## Find vulnerabilities
 
 Exploit DB: https://www.exploit-db.com
+NVD (National Vuln DB): https://nvd.nist.gov/vuln/full-listing
 
 ## DirBuster
 
