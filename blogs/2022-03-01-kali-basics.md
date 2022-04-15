@@ -3,6 +3,7 @@
 Tools directory: `/usr/share`
 
 ---
+
 # Basic Forensics
 
 List users: `cat /etc/passwd`
@@ -32,6 +33,7 @@ Very comprehensive and detailed command line scanning tool
 Find services, users, shares on the target machine
 
 ---
+
 # Network
 
 ## Basics
@@ -68,14 +70,23 @@ SYN Scan a célgép nyitott portok vizsgálatára
 
 ## netcat
 
-Local listener to access remote shell
+Act as a **client** or a **server**.
+
+- Connect to a remote server (like telnet)
+- Local listener (on a remote machine) to provide access to a remote shell
 
 Example: `nc -l -p 1234`
 
-`-l` -> listener  
-`-p <port>` -> listening port (where the victim should connect to)
+| Opt | Desc |
+|---|---|
+| `-l` | listen mode (server) |
+| `-p <port>` | listening port (where the attacker should connect to) |
+| -n | No DNS resolution |
+| -v (-vv) | Verbose (Very Verbose) output |
+| -k | Keep listening after client disconnects |
 
 ---
+
 # Metasploite
 
 Initialize Metasploite DB:
@@ -113,6 +124,7 @@ Upgrade normal shell to **meterpreter** shell:
 https://infosecwriteups.com/metasploit-upgrade-normal-shell-to-meterpreter-shell-2f09be895646
 
 ---
+
 # Crack passwords
 
 ## hashcat
@@ -155,6 +167,7 @@ Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login
 https://crackstation.net/
 
 ---
+
 # Web Site Hacking
 
 ## OWASP Juice Shop
@@ -181,6 +194,8 @@ Community version cannot save projects, all setting reset after every restart.
 - Send the captured data to Intruder
 - Send the captured data to Repeater
   - You can modify header and other parameters and send the modified request to the web server
+
+---
 
 # Windows Exploitation
 
