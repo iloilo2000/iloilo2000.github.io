@@ -1,4 +1,10 @@
-# Kali notes
+# Basics
+
+**Exploit:** Kód ami kihasznál egy sebezhetőséget  
+**Vulnerability:** Sebezhetőség, általában kód hiba vagy hibás konfigurációs beállítás  
+**Payload:** A célgépen futó kód, amit az exploit juttat be, ez végzi a kártékony tevékenységet (adatlopás, privesc, ...)
+
+## Kali notes
 
 Tools directory: `/usr/share`
 
@@ -98,19 +104,56 @@ Example: `nc -l -p 1234`
 | Opt | Desc |
 |---|---|
 | -l | listen mode (server) |
-| -p <port> | listening port (where the attacker should connect to) |
+| `-p <port>` | listening port (where the attacker should connect to) |
 | -n | No DNS resolution |
 | -v (-vv) | Verbose (Very Verbose) output |
 | -k | Keep listening after client disconnects |
 
 ---
 
-# Metasploite
-
-Initialize Metasploite DB:
+# Metasploit Framework
+  
+Initialize Metasploit DB:
 `msfdb init`
 
-Start Metasploite console: `msfconsole`
+Start Metasploit console: `msfconsole`  
+Metasploit console is the interface to interact with the modules.  
+Modules are small components within the Metasploit Framework.
+
+Modules categories (under `/opt/metasploit.../modules/`):
+- **Auxiliary:** Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
+- **Encoders:** Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
+- **Evasion:** While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software.
+- **Exploits:** Exploits, neatly organized by target system.
+- **NOPs:** NOPs (No OPeration) do nothing, literally.
+- **Payloads:** Payloads are codes that will run on the target system.
+  - Singles: Self-contained payloads that do not need to download an additional component to run.
+  - Stagers: Responsible for setting up a connection channel for large (staged) payloads.
+  - Stages: Downloaded by the stager. This will allow you to use larger sized payloads.
+- **Post:** Post modules will be useful on the final stage of the penetration testing process listed above, post-exploitation.
+
+Metasploit works with variables which can be global (`setg <all|variable-name>`) or module-local (`set <all|variable-name>`). By default the variables are local so when a module is changed, the variable should be set again. (e.g.: `set RHOSTS`)  
+Some important variables:
+- RHOSTS: Remote host (target machine)
+- RPORT: Remote, vulnerable port on the target machine
+- LHOST: Local IP address (of the Kali machine)
+- LPORT: Local port, the reverse shell will connect to
+- PAYLOAD: Payload used by the exploit
+- SESSION: Session ID of an open connection, usually used by post-exploitation
+
+To clear a variable, type: `unset <all|variable-name>` or `unsetg <all|variable-name>`
+To select (or change) a module, type: `use <module-name>`  
+To search a module, type: `search <part-of-the-module-name>`  
+After a search you can select a module by its search number (#): `use 12`  
+To see the variables of the module, type: `show options`  
+To leave the context, type: `back`  
+To have further info about the current module: `info`  
+- **Rank:** Exploits are rated based on their reliability. A low-ranking exploit may work perfectly, and an excellent ranked exploit may not, or worse, crash the target system.
+
+Launch the exploit with command `exploit` or `run`  
+To background the session, start it with `exploit -z` or if it is already started, with the command `background` or `Ctrl+Z`  
+The session then will have a session ID. To list the sessions, type: `sessions`  
+To interact a session, type `sessions -i <session-number>`
 
 Help: `msfconsole -h`
 
@@ -140,6 +183,9 @@ Main Steps to use Metasploit:
 
 Upgrade normal shell to **meterpreter** shell:
 https://infosecwriteups.com/metasploit-upgrade-normal-shell-to-meterpreter-shell-2f09be895646
+
+Other MSF commands:
+- `history`: list of the previous commands
 
 ---
 
