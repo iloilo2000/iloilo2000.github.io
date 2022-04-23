@@ -12,6 +12,12 @@ Tools directory: `/usr/share`
 
 # Basic Forensics
 
+Name of the computer: `hostname`  
+System information: `uname -a`  
+Further system information in the file: `/etc/issue`  
+Show processes: `ps`  
+Show all users' processes (**a**), the users started them (**u**) and the non-terminal processes (**x**): `ps aux`  
+Display environment variables: `env`  
 List users: `cat /etc/passwd`
 
 The home directory of the users always have some interesting stuff: `/home/<username>`
