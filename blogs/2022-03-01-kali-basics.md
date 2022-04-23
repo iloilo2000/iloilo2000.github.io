@@ -12,15 +12,21 @@ Tools directory: `/usr/share`
 
 # Basic Forensics
 
-Name of the computer: `hostname`  
-System information: `uname -a`  
-Further system information in the file: `/etc/issue`  
-Show processes: `ps`  
-Show all users' processes (**a**), the users started them (**u**) and the non-terminal processes (**x**): `ps aux`  
-Display environment variables: `env`  
-List users: `cat /etc/passwd`
-
-The home directory of the users always have some interesting stuff: `/home/<username>`
+- Name of the computer: `hostname`
+- System information: `uname -a`
+- Further system information in the file: `/etc/issue`
+- Show processes: `ps`
+  - Show all users' processes (**a**), the users started them (**u**) and the non-terminal processes (**x**): `ps aux`
+- Display environment variables: `env`
+- List commands your user can run with root privileges: `sudo -l`
+- Directory listing with hidden files: `ls -la`
+- Info about a users' privilege level and group membership: `id <username>`
+- Lists users: `cat /etc/passwd`
+  - Lists only the usernames: `cat /etc/passwd | cut -d ":" -f 1`
+  - Lists only the real users with home dir: `cat /etc/passwd | grep home`
+- Previously run commands: `history`
+- Network config of the interfaces: `ifconfig`
+- The home directory of the users always have some interesting stuff: `/home/<username>`
 
 ## Find vulnerabilities
 
