@@ -26,6 +26,8 @@ Tools directory: `/usr/share`
   - Lists only the real users with home dir: `cat /etc/passwd | grep home`
 - Previously run commands: `history`
 - Network config of the interfaces: `ifconfig`
+- Listening ports: `netstat -l`
+- Find file: `find / -name python*`
 - The home directory of the users always have some interesting stuff: `/home/<username>`
 
 ## Find vulnerabilities
