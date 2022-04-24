@@ -32,7 +32,7 @@ Tools directory: `/usr/share`
 
 ## Find vulnerabilities
 
-Exploit DB: https://www.exploit-db.com
+Exploit DB: https://www.exploit-db.com  
 NVD (National Vuln DB): https://nvd.nist.gov/vuln/full-listing
 
 ## DirBuster
