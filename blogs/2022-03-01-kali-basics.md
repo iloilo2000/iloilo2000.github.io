@@ -28,6 +28,7 @@ Tools directory: `/usr/share`
 - Network config of the interfaces: `ifconfig`
 - Listening ports: `netstat -l`
 - Find file: `find / -name python*`
+  - Check the version of the installed python: `python --version`
 - The home directory of the users always have some interesting stuff: `/home/<username>`
 
 ## Find vulnerabilities
@@ -46,7 +47,7 @@ Example: `dirb http://10.10.8.172/ /usr/share/wordlists/dirb/common.txt`
 
 ## LinPEAS
 
-LinPEAS (github)
+LinPEAS (github)  
 Very comprehensive and detailed command line scanning tool
 
 ## LinEnum or Enum4Linux
