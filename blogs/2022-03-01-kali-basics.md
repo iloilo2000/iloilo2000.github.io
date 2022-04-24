@@ -47,12 +47,19 @@ Example: `dirb http://10.10.8.172/ /usr/share/wordlists/dirb/common.txt`
 
 ## LinPEAS
 
-LinPEAS (github)  
+LinPEAS: https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS  
 Very comprehensive and detailed command line scanning tool
 
 ## LinEnum or Enum4Linux
 
+LinEnum: https://github.com/rebootuser/LinEnum  
 Find services, users, shares on the target machine
+
+## Other automatic enumeration tools
+
+LES (Linux Exploit Suggester): https://github.com/mzet-/linux-exploit-suggester
+Linux Smart Enumeration: https://github.com/diego-treitos/linux-smart-enumeration
+Linux Priv Checker: https://github.com/linted/linuxprivchecker
 
 ---
 
