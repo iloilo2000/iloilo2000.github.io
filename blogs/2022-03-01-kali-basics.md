@@ -249,14 +249,14 @@ Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login
 
 ## john the ripper (password hash)
 
-1. Collect the password hashes
-  Copy the content of **/etc/shadow** to a txt file (e.g. shadow.txt)
-2. Collect the users
-  Copy the content of **/etc/passwd** to a txt file (e.g. users.txt)
-3. Create a file for John
-  Run `unshadow users.txt shadow.txt > forjohn.txt`
-4. Crack the passwords with _rockyou.txt_
-  `john --wordlist=/usr/share/wordlists/rockyou.txt forjohn.txt`
+1. Collect the password hashes  
+   Copy the content of **/etc/shadow** to a txt file (e.g. shadow.txt)
+2. Collect the users  
+   Copy the content of **/etc/passwd** to a txt file (e.g. users.txt)
+3. Create a file for John  
+   Run `unshadow users.txt shadow.txt > forjohn.txt`
+4. Crack the passwords with _rockyou.txt_  
+   `john --wordlist=/usr/share/wordlists/rockyou.txt forjohn.txt`
 
 ## john the ripper (ssh key)
 
