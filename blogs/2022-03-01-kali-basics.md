@@ -218,10 +218,12 @@ Location of password hashes: `/etc/shadow`
 
 ## hashcat
 
-Use **hashcat** to crack a password hash:
-_-m 1000_ --> Hash type is NTLM
-_-a 0_ --> Attack type: Dictionary (disctionary file is **rockyou.txt**)
+Use **hashcat** to crack a password hash:  
+_-m 1000_ --> Hash type is NTLM  
+_-a 0_ --> Attack type: Dictionary (disctionary file is **rockyou.txt**)  
 `hashcat -m 1000 -a 0 hash.txt rockyou.txt`
+
+Example hashes to find out hash type: https://hashcat.net/wiki/doku.php?id=example_hashes
 
 ## hydra
 
