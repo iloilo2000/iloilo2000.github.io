@@ -247,7 +247,18 @@ Example4: `hydra -l username -P passlist.txt 10.10.95.142 http-post-form "/login
 | F=incorrect | Failed login if the answer contains "incorrect" |
 | -V | verbose log |
 
-## john the ripper
+## john the ripper (password hash)
+
+1. Collect the password hashes
+  Copy the content of **/etc/shadow** to a txt file (e.g. shadow.txt)
+2. Collect the users
+  Copy the content of **/etc/passwd** to a txt file (e.g. users.txt)
+3. Create a file for John
+  Run `unshadow users.txt shadow.txt > forjohn.txt`
+4. Crack the passwords with _rockyou.txt_
+  `john --wordlist=/usr/share/wordlists/rockyou.txt forjohn.txt`
+
+## john the ripper (ssh key)
 
 1. create/download/copy RSA Key file
 2. Make key_txt for JohnTheRipper with `ssh2john`
@@ -293,8 +304,17 @@ Community version cannot save projects, all setting reset after every restart.
 Standard Linux commands to bypass security on a misconfigured system:  
 https://gtfobins.github.io/
 
-Windows commands that can help an exploitation:  
-https://lolbas-project.github.io/
+## SUDO
+
+- `sudo -l` shows the executables that can be run as root from the current user context.
+- Compare the list with the link above
+- Read the description how the executable can be escalated
+
+## SUID
+
+- Find the SUID flagged executables: `find / -type f -perm -04000 -ls 2>/dev/null`
+- Compare the list with the **gtfobins** web site above
+- Read the description how the executable can be escalated
 
 ---
 
@@ -304,3 +324,7 @@ https://lolbas-project.github.io/
 
 Start powerview: `. .\poweview.ps1` (note! the command start with two dots with a space)
 
+## Windows privesc executables
+
+Windows commands that can help an exploitation:  
+https://lolbas-project.github.io/
