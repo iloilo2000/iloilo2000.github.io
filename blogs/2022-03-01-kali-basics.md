@@ -27,8 +27,9 @@ Tools directory: `/usr/share`
 - Previously run commands: `history`
 - Network config of the interfaces: `ifconfig`
 - Listening ports: `netstat -l`
-- Find file: `find / -name python*`
-  - Check the version of the installed python: `python --version`
+- Find file: `find / -name flag.txt`
+  - To filter out the error messages: `find / -name flag.txt 2>/dev/null`
+- Check the version of the installed python: `python --version`
 - The home directory of the users always have some interesting stuff: `/home/<username>`
 
 ## Find vulnerabilities
@@ -213,6 +214,8 @@ Other MSF commands:
 
 # Crack passwords
 
+Location of password hashes: `/etc/shadow`
+
 ## hashcat
 
 Use **hashcat** to crack a password hash:
@@ -280,6 +283,16 @@ Community version cannot save projects, all setting reset after every restart.
 - Send the captured data to Intruder
 - Send the captured data to Repeater
   - You can modify header and other parameters and send the modified request to the web server
+
+---
+
+# Privilege escalation
+
+Standard Linux commands to bypass security on a misconfigured system:  
+https://gtfobins.github.io/
+
+Windows commands that can help an exploitation:  
+https://lolbas-project.github.io/
 
 ---
 
