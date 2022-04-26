@@ -308,13 +308,19 @@ https://gtfobins.github.io/
 
 - `sudo -l` shows the executables that can be run as root from the current user context.
 - Compare the list with the link above
-- Read the description how the executable can be escalated
+- Read the description how the executable can be escalated using **Sudo**
 
 ## SUID
 
 - Find the SUID flagged executables: `find / -type f -perm -04000 -ls 2>/dev/null`
 - Compare the list with the **gtfobins** web site above
-- Read the description how the executable can be escalated
+- Read the description how the executable can be escalated using **SUID**
+
+## Capabilities
+
+- Find executables with "elevated" **capabilities**: `getcap -r / 2>/dev/null`
+- Compare the list with the **gtfobins** web site above
+- Read the description how the executable can be escalated using **Capabilities**
 
 ---
 
