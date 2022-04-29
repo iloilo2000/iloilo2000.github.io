@@ -334,3 +334,7 @@ Start powerview: `. .\poweview.ps1` (note! the command start with two dots with 
 
 Windows commands that can help an exploitation:  
 https://lolbas-project.github.io/
+
+## Autospy
+
+Offline disk image investigation.
