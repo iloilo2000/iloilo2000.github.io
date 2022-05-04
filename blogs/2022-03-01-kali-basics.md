@@ -343,9 +343,35 @@ Offline disk image forensics.
 
 ---
 
-# Mitre ATT&CK Framework
+# Mitre
+
+## ATT&CK Framework
 
 https://attack.mitre.org/
 
 MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.  
 MITRE has 14 categories of attacking an Enterprise. Each category containes techniques to perform the attack.
+
+**ATT&CK Emulation Plans**
+
+- APT3: https://attack.mitre.org/resources/adversary-emulation-plans/
+- APT29: https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/apt29
+- FIN6: https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/fin6
+
+**Mitre Shield (deprecated) Defense Techniques**
+
+- Create vulnerable (dummy) account and monitor it to detect adversary activity on the network
+- Create vulnerable network segment
+- ...
+
+## Engage Framework
+
+https://engage.mitre.org/
+
+MITRE Engage is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals.
+
+## CAR Knowledge Base
+
+https://car.mitre.org/
+
+The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by MITRE based on the MITRE ATT&CK® adversary model.
