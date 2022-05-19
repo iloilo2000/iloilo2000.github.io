@@ -391,6 +391,11 @@ Setup Docker:
 Setup OpenVAS Docker Image:  
 `sudo docker run -d -p 443:443 --name openvas mikesplain/openvas`
 
+After computer restart the Docker image must be started manually:  
+`sudo docker start openvas`
+
+## Use OpenVAS
+
 Run OpenVAS:  
 Open browser: `https://127.0.0.1`  
 User: **admin**  
