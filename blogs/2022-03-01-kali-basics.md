@@ -376,6 +376,8 @@ https://car.mitre.org/
 
 The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by MITRE based on the MITRE ATT&CK® adversary model.
 
+---
+
 # OpenVAS
 
 OpenVAS (Open Vulnerability Assessment Scanner), is an application used to scan endpoints and web applications to identify and detect vulnerabilities.  
