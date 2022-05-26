@@ -62,6 +62,23 @@ LES (Linux Exploit Suggester): https://github.com/mzet-/linux-exploit-suggester
 Linux Smart Enumeration: https://github.com/diego-treitos/linux-smart-enumeration
 Linux Priv Checker: https://github.com/linted/linuxprivchecker
 
+## Volatility - Memory forensics
+
+Volatility is a memory forensics and incident response tool.
+
+- Install: `apt-get install volatility`
+
+Memory capture tools (for online systems):
+- DumpIt.exe
+- win32dd.exe / win64dd.exe
+
+Memory capture (for offline systems):
+- %systemdrive%/hyberfil.sys
+
+Memory capturev (for VMs):
+- VMWare: .vmem file
+- HyperV: .bin file
+
 ---
 
 # Network
