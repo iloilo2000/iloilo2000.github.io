@@ -79,6 +79,12 @@ Memory capturev (for VMs):
 - VMWare: .vmem file
 - HyperV: .bin file
 
+## RedLine
+
+Similar to **Volatility** but faster, have a GUI.
+
+User Guide: https://www.fireeye.com/content/dam/fireeye-www/services/freeware/ug-redline.pdf
+
 ---
 
 # Network
