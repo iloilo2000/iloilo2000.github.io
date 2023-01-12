@@ -51,7 +51,7 @@ Web GUI notion.so (login with Google)
 - Create a file: `touch <filename>`
 - Create folder: `mkdir <dirname>`
 - Copy file or folder: `cp <file or folder> <folder>`
-- Move fil or folder: `mv`
+- Move (or rename) file or folder: `mv`
 - Remove file: `rm <filename>`
 - Remove directory: `rm -R <dirname>`
 - Determine the type of a file: `file <filename>`
