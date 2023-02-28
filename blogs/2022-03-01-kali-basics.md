@@ -320,6 +320,14 @@ Community version cannot save projects, all setting reset after every restart.
 - Send the captured data to Repeater
   - You can modify header and other parameters and send the modified request to the web server
 
+## Cookie en/decoding
+
+Open Browser developer tools (F12)  
+Application tab -> Cookies
+
+Cookie value can be decrypted with **CyberChef**:  
+https://gchq.github.io/CyberChef/
+
 ---
 
 # Privilege escalation
