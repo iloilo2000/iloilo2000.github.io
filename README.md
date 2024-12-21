@@ -13,3 +13,7 @@ Just some Linux basics...
 # Windows things
 
 [2020-05-01 windows admin center](/blogs/2020-05-01-windows-admin-center.md)
+
+# Home Assistant things
+
+[2024-12-21 Slimmelezer config for HA](/blogs/2024-12-21-slimmelezer-for-ha.md)
