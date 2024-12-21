@@ -16,4 +16,4 @@ Just some Linux basics...
 
 # Home Assistant things
 
-[2024-12-21 Slimmelezer config for HA](/blogs/2024-12-21-slimmelezer-for-ha.md)
+[2024-12-21 Slimmelezer config for HA](/HomeAssistant/slimmelezer.yaml)
